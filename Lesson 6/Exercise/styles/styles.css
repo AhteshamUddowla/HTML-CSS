@@ -1,0 +1,14 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 400px;
+    text-align: center;
+}
+
+.process{
+    text-decoration: underline;
+}
