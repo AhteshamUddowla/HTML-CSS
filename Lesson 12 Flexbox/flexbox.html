@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+        }
+       .a{
+        background-color: aqua;
+        width: 100px;
+       }
+       .b{
+        background-color: bisque;
+       }
+       .c{
+        background-color:blueviolet;
+        flex: 1;
+       }
+       .d{
+        background-color: coral;
+        flex: 2;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">100px</div>
+        <div class="b">Div2 <p>text</p> </div>
+    </div>
+
+    <div class="container">
+        <div class="a">100px</div>
+        <div class="c">Flex: 1 </div>
+    </div>
+
+    <div class="container">
+        <div class="a">100px</div>
+        <div class="c">Flex: 1 </div>
+        <div class="d">Flex: 2</div>
+    </div>
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        height: 70px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+        justify-content: center;
+    ">
+        <div style="background-color: aqua; width:100px;">100px</div>
+        <div style="background-color: coral; width:100px;">Flex: 1 </div>
+        <div style="background-color: aqua; width:100px;">Flex: 2</div>
+    </div>
+
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        height: 70px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+        justify-content: space-between;
+    ">
+        <div style="background-color: aqua; width:100px;">100px</div>
+        <div style="background-color: coral; width:100px;">Flex: 1 </div>
+        <div style="background-color: aqua; width:100px;">Flex: 2</div>
+    </div>
+
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        height: 70px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+        justify-content: space-between;
+        align-items: center;
+    ">
+        <div style="background-color: aqua; width:100px;">100px</div>
+        <div style="background-color: coral; width:100px;">Flex: 1 </div>
+        <div style="background-color: aqua; width:100px;">Flex: 2</div>
+    </div>
+</body>
+</html>
