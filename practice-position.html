@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 2000px;
+        }
+
+        /* == Position: Fixed == */
+        .fixed{
+            background-color: aqua;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 470px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+        }
+
+        /* == Position: Absolute == */
+        .absolute{
+            position: absolute;
+            background-color: bisque;
+            top: 120px;
+            left: 10px;
+            right: 10px;
+            bottom: 380px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        /* == Position Absolute inside Position Fixed == */
+        .absolute-inside-fixed--fixed{
+            position: fixed;
+            font-weight: bold;
+            background-color: aquamarine;
+            top: 220px;
+            left: 10px;
+            right: 250px;
+            padding: 20px;
+        }
+        .absolute-inside-fixed--absolute{
+            position: absolute;
+            top: -8px;
+            right: -6px;
+            background-color: bisque;
+            padding: 2px 4px;
+            border-radius: 50%;
+        }
+
+        /* == Position: Relative == */
+        .relative{
+            position: relative;
+            font-weight: bold;
+            padding: 20px;
+            background-color: lightgreen;
+            top: 300px;       
+        }
+
+        /* == Position absolute inside Position relative == */
+        .absolute-inside-relative--relative{
+            position: relative;
+            font-weight: bold;
+            background-color: lightcoral;
+            top: 350px;           
+            padding: 20px;
+        }
+        .absolute-inside-relative--absolute{
+            position: absolute;
+            background-color: lightpink;
+            padding: 2px 4px;
+            border-radius: 50%;
+            top: -8px;
+            right: -3px;
+        }
+        .absolute-inside-relative--time{
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 2px 4px;
+            bottom: 8px;
+            right: 8px;
+            border-radius: 2px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="fixed">Position: Fixed</div>
+
+    <div class="absolute">Position: Absolute</div>
+
+    <div class="absolute-inside-fixed--fixed">
+        Position absolute inside position fixed
+        <div class="absolute-inside-fixed--absolute">
+            X
+        </div>
+    </div>
+
+    <div class="relative"> Position: Relative </div>
+
+    <div class="absolute-inside-relative--relative">
+        Position absolute inside position relative
+        <div class="absolute-inside-relative--absolute">
+            X
+        </div>
+        <div class="absolute-inside-relative--time">14:20</div>
+    </div>
+
+</body>
+</html>

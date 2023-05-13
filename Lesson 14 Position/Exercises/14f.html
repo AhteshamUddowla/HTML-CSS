@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        .sidebar1{
+            background-color: rgba(0, 0, 0,0.7);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            width: 100px;
+        }
+        .channel-image{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .sidebar2{
+            background-color:rgba(0, 0, 0,0.5);
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 100px;
+            width: 220px;
+        }
+        .title{
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+            height: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .plus{
+            color: rgba(79, 79, 79, 1);
+            font-size: 30px;
+            padding-right: 15px;
+        }
+        .channel-name{
+            font-size: 20px;
+            padding: 10px;
+            color: rgba(79, 79, 79, 1);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sidebar1">
+        <img class="channel-image" src="cat1.jpg" alt="">
+        <img class="channel-image"  src="cat2.jpg" alt="">
+        <img class="channel-image"  src="cat3.jpg" alt="">
+    </div>
+    <div class="sidebar2">
+        <div class="title">
+            <h6>INFO</h6>
+            <h6 class="plus">+</h6>
+        </div>
+        <div class="channel-name">
+            <p># new-videos</p>
+            <p># updates</p>
+            <p># faq</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 1000px;
+        }
+        .relative{
+            position: relative;
+            display: inline-block;
+        }
+        .relative img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .absolute{
+            position: absolute;
+            background-color: white;
+            color: black;
+            padding: 3px 5px;
+            top: 5px;
+            right: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="relative">
+        <img src="tshirt.jpg" alt="">
+        <div class="absolute">20% OFF</div>
+    </div>
+ 
+
+
+</body>
+</html>

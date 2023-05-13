@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 1000px;
+        }
+        .relative{
+            position: relative;
+            display: inline-block;
+            height: 300px;
+        }
+        .relative img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .absolute{
+            position: absolute;
+            background-color: white;
+            color: black;
+            padding: 3px 5px;
+            top: 5px;
+            right: 5px;
+        }
+        .cart{
+            position: absolute;
+            background-color: rgba(0, 0, 0,0.1);
+            top: 180px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cart button{
+            height: 30px;
+            padding: 6px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="relative">
+        <img src="tshirt1.jpg" alt="">
+        <div class="absolute">20% OFF</div>
+        <div class="cart">
+            <button>Add to cart</button>
+        </div>
+    </div>
+ 
+
+
+</body>
+</html>
